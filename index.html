@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+	<link rel="icon" type="image/png"  href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    
+	<div>
+		<div id="deem"></div>
+		<header >
+				<img id="open_menu"  src="images/icon-menu.svg" alt="">
+				<div class="title">
+					<img src="images/logo.svg" alt="">
+				</div>
+				<nav class="navlinks">
+					<a href="#" class="navlink">collections</a>
+					<a href="#" class="navlink">men</a>
+					<a href="#" class="navlink">women</a>
+					<a href="#" class="navlink">about</a>
+					<a href="#" class="navlink">contact</a>
+				</nav>
+			<div class="header-end">
+				<div class="cart">
+					<p class="cart-count count-number">0</p>
+					<img id="cart-img" src="images/icon-cart.svg" alt="">
+				</div>
+				<img class="avatar" src="images/image-avatar.png" alt="">
+			</div>
+			
+			<div class="cart-info">
+				<div class="cart-header">
+					<p><strong>Cart</strong></p>
+				</div>
+				<div class="item-info height-100 ">
+					<div class="not-empty-cart">
+						<img class="cart-img" src="images/image-product-1-thumbnail.jpg" alt="">
+						<div class="item-cost">
+							<p>Fall Limited Edition Sneakers</p>
+							<p>$125.00 x <span class="count-number " style="font-weight: bold;">0</span> <strong
+									class="total-price">$375.00</strong></p>
+						</div>
+						<img class="delete" src="images/icon-delete.svg" alt="">
+					</div>
+					<p class="empty-cart">Your cart is empty.</p>
+				</div> 
+
+				<button class="checkout-btn">Checkout</button> 
+			</div>
+		</header>
+	</div>
+
+
+	<!-- Slide Show -->
+	<div class="slide-container">
+		<div class="slide fade">
+		 <img  src='images\image-product-1.jpg' alt=''>
+	   </div>
+	   <div class="slide fade">
+		 <img  src='images\image-product-2.jpg' alt=''>
+	   </div>
+	   <div class="slide fade">
+		 <img  src='images\image-product-3.jpg' alt=''>
+	   </div>
+	   <div class="slide fade">
+		 <img  src='images\image-product-4.jpg' alt=''>
+	   </div>
+	 </div>
+
+	 <div class="prevDiv">
+		<img class="prev" src="images/icon-previous.svg" alt="" onclick="plusSlides(-1)">
+	   </div>
+
+	   <div class="nextDiv">
+		<img class="next" src="images/icon-next.svg" alt="" onclick="plusSlides(1)">
+	   </div>
+	   <!-- Slide Show ends -->
+	
+
+	<section id="features">
+	
+		  <div class="images">
+			  <div class="big-img">
+				<img class="active-img" src="images\image-product-1.jpg" alt="">
+			  </div>
+			  <div class="sm-imgs">
+				  <img class="sm-img active" src="images\image-product-1-thumbnail.jpg" alt="">
+				  <img class="sm-img" src="images\image-product-2-thumbnail.jpg" alt="">
+				  <img class="sm-img" src="images\image-product-3-thumbnail.jpg" alt="">
+				  <img class="sm-img" src="images\image-product-4-thumbnail.jpg" alt="">
+			  </div>
+		  </div>
+
+		  <!-- Light Box -->
+		  <div id="light-box" class="lightBox">
+			<div class="lightBox-content">
+			   <div class="lightBox-images">
+				<span class="close">&times;</span>
+				<div class="big-img">
+				  <img class="active-lightBox-img" src="images\image-product-1.jpg" alt="">
+				</div>
+				<div class="sm-lightBox-imgs">
+					<img class=" active lightBox-pic" src="images\image-product-1-thumbnail.jpg" alt="">
+					<img class=" lightBox-pic" src="images\image-product-2-thumbnail.jpg" alt="">
+					<img class=" lightBox-pic" src="images\image-product-3-thumbnail.jpg" alt="">
+					<img class=" lightBox-pic" src="images\image-product-4-thumbnail.jpg" alt="">
+				</div>
+			</div>
+			</div>
+		   </div>
+	  
+		  <div class="description">
+			<h4>SNEAKER COMPANY</h4>
+		  <h1>Fall Limited Edition Sneakers</h1>
+		  <p class="item-description">These low-profile Sneakers are your perfect casual wear 
+			  companion. Featuring a durable rubber outer sole. They'll
+			  withstand everything the weather can offer.
+		  </p>
+		  
+		  <div class="price">
+			<div class="discount">
+				<h2>$125.00</h2>
+				<p>50%</p>
+			</div>
+			<p class="initial-price">$250.00</p>
+		</div>
+
+		<div class="add-to-cart">
+			<div class="add-remove">
+				<img class="minus" src="images/icon-minus.svg" alt="">
+				<p class="count">0</p>
+				<img class="plus" src="images/icon-plus.svg" alt="">
+			</div>
+			<div class="btn">
+				<img src="images/icon-cart-white.svg" alt="" height="20px" >
+				<p>Add to cart</p>
+			</div>
+		</div>
+		  </div>
+	
+	</section>
+
+<!-- Slide bar for small screen -->
+	<div class="slide-bar">
+		<img id="close-menu" src="images/icon-close.svg" alt="">
+		<ul>
+			<li><a href="#" class="navlink slide-link">Collections</a></li>
+			<li><a href="#" class="navlink slide-link">Men</a></li>
+			<li><a href="#" class="navlink slide-link">Women</a></li>
+			<li><a href="#" class="navlink slide-link">About</a></li>
+			<li><a href="#" class="navlink slide-link">Contact</a></li>
+		</ul>
+	</div>
+
+	<script src="index.js"></script>
+    
+</body>
+</html>
